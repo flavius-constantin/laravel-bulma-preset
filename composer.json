@@ -1,9 +1,16 @@
 {
     "name": "flavius-constantin/laravel-bulma-preset",
+    "type": "library",
     "description": "Bulma Preset Scaffolding for Laravel 5.5",
     "keywords": ["preset", "bulma", "laravel"],
+    "homepage": "https://github.com/flavius-constantin/laravel-bulma-preset",
     "license": "MIT",
-    "version": "alpha",
+    "authors": [
+        {
+            "name": "Flavius Constantin",
+            "email": "me@flavius-constantin.de"
+        }
+    ],
     "require": {
         "laravel/framework": "5.5.*"
     },
@@ -19,5 +26,4 @@
        ]
       }
     }
-
 }
