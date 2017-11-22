@@ -3,7 +3,7 @@
     "description": "Bulma Preset Scaffolding for Laravel 5.5",
     "keywords": ["preset", "bulma", "laravel"],
     "license": "MIT",
-    "version": "1.0.0"
+    "version": "1.0.0",
     "require": {
         "laravel/framework": "5.5.*"
     },
