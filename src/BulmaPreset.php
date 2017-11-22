@@ -1,5 +1,5 @@
 <?php
-namespace TeamCookie\BulmaPreset;
+namespace FlaviusConstantin\BulmaPreset;
 
 use Artisan;
 use Illuminate\Support\Arr;
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Console\Presets\Preset;
 
 class BulmaPreset extends Preset
 {
-  
+
     /**
      * Install the preset.
      *
