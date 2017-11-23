@@ -1,5 +1,5 @@
 <?php
-namespace TeamCookie\BulmaPreset;
+namespace FlaviusConstantin\BulmaPreset;
 
 use Artisan;
 use Illuminate\Support\Arr;

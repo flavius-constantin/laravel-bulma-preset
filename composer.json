@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "TeamCookie\\BulmaPreset\\": "src/"
+            "FlaviusConstantin\\BulmaPreset\\": "src/"
         }
     },
     "extra": {
       "laravel": {
         "providers": [
-          "TeamCookie\\BulmaPreset\\BulmaPresetServiceProvider"
+          "FlaviusConstantin\\BulmaPreset\\BulmaPresetServiceProvider"
        ]
       }
     }
