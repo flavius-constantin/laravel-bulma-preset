@@ -6,7 +6,6 @@
     "keywords": ["preset", "bulma", "laravel"],
     "homepage": "https://github.com/flavius-constantin/laravel-bulma-preset",
     "license": "MIT",
-    "minimum-stability": "alpha",
     "authors": [
         {
             "name": "Flavius Constantin",
