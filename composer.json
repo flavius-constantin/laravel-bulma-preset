@@ -12,18 +12,17 @@
         }
     ],
     "require": {
-        "laravel/framework": "5.5.*",
-        "flavius-constantin/laravel-bulma-preset": "*"
+        "laravel/framework": "5.5.*"
     },
     "autoload": {
         "psr-4": {
-            "FlaviusConstantin\\BulmaPreset\\": "src/"
+            "TeamCookie\\BulmaPreset\\": "src/"
         }
     },
     "extra": {
       "laravel": {
         "providers": [
-          "FlaviusConstantin\\BulmaPreset\\BulmaPresetServiceProvider"
+          "TeamCookie\\BulmaPreset\\BulmaPresetServiceProvider"
        ]
       }
     }
