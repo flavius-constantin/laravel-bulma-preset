@@ -1,6 +1,7 @@
 {
     "name": "flavius-constantin/laravel-bulma-preset",
     "type": "library",
+    "version": "1.0.0",
     "description": "Bulma Preset Scaffolding for Laravel 5.5",
     "keywords": ["preset", "bulma", "laravel"],
     "homepage": "https://github.com/flavius-constantin/laravel-bulma-preset",
