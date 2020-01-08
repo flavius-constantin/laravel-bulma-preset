@@ -1,14 +1,13 @@
 <?php
+
 namespace FlaviusConstantin\BulmaPreset;
 
-use Artisan;
-use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset;
+use Illuminate\Support\Arr;
 
 class BulmaPreset extends Preset
 {
-
     /**
      * Install the preset.
      *
@@ -19,12 +18,9 @@ class BulmaPreset extends Preset
         static::updatePackages();
         static::updateSass();
         static::updateBootstrapping();
-        if($withAuth)
-        {
+        if ($withAuth) {
             static::addAuthTemplates();
-        }
-        else
-        {
+        } else {
             static::updateWelcomePage();
         }
         static::removeNodeModules();
@@ -33,7 +29,8 @@ class BulmaPreset extends Preset
     /**
      * Update the given package array.
      *
-     * @param  array  $packages
+     * @param array $packages
+     *
      * @return array
      */
     protected static function updatePackageArray(array $packages)
@@ -52,9 +49,8 @@ class BulmaPreset extends Preset
     {
         // clean up orphan files
         $orphan_sass_files = glob(resource_path('/assets/sass/*.*'));
-        foreach($orphan_sass_files as $sass_file)
-        {
-            (new Filesystem)->delete($sass_file);
+        foreach ($orphan_sass_files as $sass_file) {
+            (new Filesystem())->delete($sass_file);
         }
         copy(__DIR__.'/bulma-stubs/app.scss', resource_path('assets/sass/app.scss'));
     }
@@ -66,7 +62,7 @@ class BulmaPreset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        (new Filesystem)->delete(
+        (new Filesystem())->delete(
             resource_path('assets/js/bootstrap.js')
         );
         copy(__DIR__.'/bulma-stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
@@ -80,7 +76,7 @@ class BulmaPreset extends Preset
     protected static function updateWelcomePage()
     {
         // remove default welcome page
-        (new Filesystem)->delete(
+        (new Filesystem())->delete(
             resource_path('views/welcome.blade.php')
         );
 
@@ -103,6 +99,6 @@ class BulmaPreset extends Preset
         file_put_contents('./routes/web.php', $auth_route_entry, FILE_APPEND);
 
         // Copy Bulma Auth view templates
-        (new Filesystem)->copyDirectory(__DIR__.'/bulma-stubs/views', resource_path('views'));
+        (new Filesystem())->copyDirectory(__DIR__.'/bulma-stubs/views', resource_path('views'));
     }
 }
